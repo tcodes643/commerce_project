@@ -80,6 +80,9 @@
     header .header-nav nav a:first-child{
         padding-left: 0;
     }
+    header .header-top .header-div-3 .header-div-3-relative{
+        cursor: pointer;   
+    }
     header .header-top .header-div-3 .header-div-3-relative .nav .nav-div{
         display: flex;
         align-items: center;

@@ -54,8 +54,8 @@ header .header-nav{
     height: 300px;
     transition: all linear .2s;
 }
-header .header-nav nav{
-    display: block;
+header .header-div-3 .header-div-3-relative .nav{
+    visibility: hidden;i
 }
 header .header-nav nav > *{
     color: #000;
