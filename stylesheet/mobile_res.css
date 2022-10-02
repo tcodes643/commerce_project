@@ -1,13 +1,93 @@
 @media screen and (min-width: 768px){
-    body{
-        background-color: orangered;
-    }
     main .section-five{
         display: none !important;
     }
+    .container{
+        width: 85%;
+        margin: 0 auto;
+    }
+    main .section-two .prod-flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left !important;
+    }
+    header .header-nav{
+        height: 65px;
+    }
+    header .header-nav nav{
+        display: flex;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    header .header-nav nav a{
+        padding: 10px 20px;
+    }
+    header .header-top .header-div-2{
+        display: none;
+    }
+    header .header-top .header-div-3:focus{
+        outline: none;
+    }
+    header .header-top .header-div-3{
+        position: absolute;
+        top: 25px;
+        right: 30px;
+    }
+    header .header-top .header-div-3 .header-div-3-relative{
+        position: relative;
+    }
+    header{
+        border-bottom: 1px solid rgb(194, 194, 194);
+    }
+    header .header-top .header-div-3 .header-div-3-relative .nav{
+        position: absolute;
+        top: 44px;
+        font-size: 15px;
+        width: 150px;
+        background-color: #f5f5f5;
+    }
+    header .header-top .header-div-3 .header-div-3-relative .nav .btn-group{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    header .header-top .header-div-3 .header-div-3-relative .nav .btn-group button{
+        border:none;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    header .header-top .header-div-3 label{
+        height: 35px;
+        display: flex;
+        align-items: center;
+        border: 1px solid;
+        margin-bottom: 55px;
+    }
+    header .header-top .header-div-3 label i{
+        margin: 0 15px;
+        margin-right: 0;
+    }
+    header .header-top .header-div-3 label input{
+        background-color: transparent;
+        height: 35px;
+        border:none;
+        margin-left: 8px;
+    }
+    header .header-nav nav a:first-child{
+        padding-left: 0;
+    }
 }
-@media screen and (min-width: 600px){
+@media screen and (max-width: 768px){
     body{
-        background-color: gold;
+        background-color: orangered;
+    }
+    main .section-two .prod-flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+    footer .footer-tab{
+        visibility: hidden;
     }
 }
