@@ -1,5 +1,13 @@
-@media screen and (min-width: 770px){
+@media screen and (min-width: 768px){
     body{
         background-color: orangered;
+    }
+    main .section-five{
+        display: none !important;
+    }
+}
+@media screen and (min-width: 600px){
+    body{
+        background-color: gold;
     }
 }

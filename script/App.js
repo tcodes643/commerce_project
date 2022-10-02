@@ -1,1 +1,1 @@
-let _m_=document.querySelector("header .header-top .header-div-2");_m_.addEventListener("click", (e)=>{});
+let _m_=document.querySelector("header .header-top .header-div-2");_m_.addEventListener("click", (e)=>{document.querySelector("header .header-nav").classList.toggle("m");});
