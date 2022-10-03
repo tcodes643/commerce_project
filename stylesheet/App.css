@@ -7,8 +7,6 @@
 @font-face {
     font-family: fp;
     src: url();
-    font-size: ;
-    font-weight: ;
 }
 body{
     overflow-x: hidden;
@@ -55,7 +53,7 @@ header .header-nav{
     transition: all linear .2s;
 }
 header .header-div-3 .header-div-3-relative .nav{
-    visibility: hidden;i
+    visibility: hidden;
 }
 header .header-nav nav > *{
     color: #000;
@@ -267,4 +265,96 @@ main .section-two .btn-group button{
 }
 main .section-two .btn-group button:hover{
     background-color: #add8ad;
+}
+.main .cart-cont .cart-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.main .cart-cont .cart-header-2{
+    visibility: hidden;
+}
+.main .cart-cont .cart-header-1 p{
+    font-size: 30px;
+}
+.main .cart-cont .cart-body table tbody{
+    display: flex;
+    justify-content: space-between;
+}
+.main .cart-cont .cart-body table tbody td{
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    padding: 10px;
+}
+.main .cart-cont .cart-body table tbody td p{
+    font-size: 20px;
+    font-weight: bold;
+    font-size: 17px !important;
+}
+.main .cart-cont .cart-body table tbody .td-1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+.main .cart-cont .cart-body table tbody .td-4 label input[type="number"]{
+    width: 100px;
+    border: 1px solid #000;
+    padding: 10px;
+    border:none;
+    background-color: #f5f5f5;
+}
+.main .cart-cont .cart-body table{
+    position: relative;
+    padding: 25px 0;
+}
+.main .cart-cont .cart-body table tbody .td-1 i{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;right: 0;
+    top: 0;
+    height: 20px;
+    border-radius: 100px;
+    background-color: #000;
+    color: #fff;
+}
+.main .cart-cont .cart-body table tbody .td-1 img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+}
+.main .cart-cont .cart-body .coup label input{
+    width: 100%;
+    height: 50px;
+    background-color: #f5f5f5;
+    padding-left: 10px;
+    border:0px 0px 2px 0px inset #f5f5f5;
+}
+.main .cart-cont .cart-body .coup .coup-btn-group{
+    display: flex;
+    justify-content: right;
+}
+.main .cart-cont .cart-body .coup .coup-btn-group button{
+    padding: 10px 25px;
+    margin-top: 10px;
+    border: none;
+    color: #000;
+    font-size: 15px;
+}
+.main .cart-cont .cart-body .coup .coup-btn-group .btn-2{
+    margin-top: 30px;
+}
+.main .cart-cont .cart-body .ss{
+    margin-top: 30px;
+}
+.main .cart-cont .cart-body .ss .ss-p1{
+    font-size: 35px;
+    text-decoration: none;
+}
+.main .cart-cont .cart-body .ss .ss-p1{
+
 }
