@@ -389,37 +389,49 @@ main .section-two .btn-group button:hover{
     display: block;
     margin-top: 40px !important;
 }
-.main .cart-cont .cart-body .ss .lab{
+.main .cart-cont .cart-body .ss .lab,
+.main .ss .lab{
     display: block;
 }
-.main .cart-cont .cart-body .ss .lab span{
+.main .cart-cont .cart-body .ss .lab span,
+.main .ss .lab span{
     display: block;
 }
 .main .cart-cont .cart-body .ss .lab input,
-.main .cart-cont .cart-body .ss .lab button{
+.main .cart-cont .cart-body .ss .lab button,
+.main .ss .lab input,
+.main .ss .lab button{
     padding: 10px;
     border: none;
 }
-.main .cart-cont .cart-body .ss .lab input{
+.main .cart-cont .cart-body .ss .lab input,
+.main .ss .lab input{
     box-shadow: 0px 0px 2px 1px inset #000;
     width: 350px;
 }
-.main .cart-cont .cart-body .ss .rec-p .p-1{
+.main .cart-cont .cart-body .ss .rec-p .p-1,
+.main .ss .rec-p .p-1{
     font-size: 20px;
     margin-top: 40px;
     margin-bottom: 15px;
 }
-.main .cart-cont .cart-body .ss .rec-p a{
+.main .cart-cont .cart-body .ss .rec-p a,
+.main .ss .rec-p a{
     color: #000;
     margin-bottom: 20px;
     display: block;
 }
-.main .cart-cont .cart-body .ss .rec-p .p-2{
+.main .cart-cont .cart-body .ss .rec-p .p-2,
+.main .ss .rec-p .p-2{
     font-size: 30px;
     margin-bottom: 15px;
 }
 form > *{
     display: block;
+}
+form a{
+    margin-top: 30px;
+    margin-bottom: 100px;
 }
 form label{
     margin-bottom: 10px;
@@ -447,4 +459,24 @@ form .label-2 i{
 }
 .form .p-2{
     margin-bottom: 10px;
+}
+.form .rem input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+.form .btn-group button{
+    padding: 10px 30px;
+    background-color: #dddddd;
+    border:none;
+    margin-top: 5px;
+}
+.chaf-right{
+    display: none;
+}
+.chaf-right{
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 20px;
 }

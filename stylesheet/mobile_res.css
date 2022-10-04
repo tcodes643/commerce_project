@@ -108,5 +108,11 @@
     }
     footer .footer-tab{
         visibility: hidden;
+    }   
+    .chaf-right{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
     }
 }
