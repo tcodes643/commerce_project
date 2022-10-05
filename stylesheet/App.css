@@ -1,482 +1,152 @@
-*{
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-}
-@font-face {
-    font-family: fp;
-    src: url();
-}
-body{
-    overflow-x: hidden;
-}
 .container{
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
 }
 header{
-    position: relative;
-    padding: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #c3c3c3;
 }
-header .header-top{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-header .header-top .header-div-1 img{
+header .h-i .logo img{
     width: 200px;
     height: 70px;
 }
-header .header-top .header-div-2 button{
-    border: 1px solid #000;
-    padding: 5px;
-    width: 100px;
+.h-flex{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #fff;
-    height: 40px;
 }
-header .header-top .header-div-2 button:hover{
-    background-color: #000;
-    transition: all linear .2s;
-    color: #fff;
+header .h-i{
+    width: 100%;
 }
-header .header-nav{
-    height: 0;
-    overflow:hidden;
-}
-.m{
-    height: 300px;
-    transition: all linear .2s;
-}
-header .header-div-3 .header-div-3-relative .nav{
-    visibility: hidden;
-}
-header .header-nav nav > *{
-    color: #000;
-    text-decoration: none;
+header .h-i nav a{
     display: block;
-    padding: 15px 0;
+    text-decoration: none;
+    color: #000;
+    padding: 15px;
 }
-header .header-nav nav > a:hover{
-    color: rgb(152, 152, 152);
+header .h-i nav{
+    display: none;
 }
-main .section-one{
-    margin-top: 50px;
-    margin-bottom: 50px;
+header .h-i nav a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding-left: 0;
+    padding-right: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
-main .section-one .img{
-    background-image: url();
+header .h-i nav a:hover{
+    color: rgb(168, 164, 164);
+}
+header .h-ii button{
+    display: flex;
+    align-items: center;
+    border: 3px solid;
+    background-color: #fff;
+    padding: 10px 20px;
+}
+header .h-ii button:hover{
+    background-color: #000;
+    border: 3px solid #fff;
+    color: #fff;
+    transition: background-color linear .3s;
+}
+header .h-ii button i{
+    margin-right: 15px;
+}
+header .h-iii{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+main section{
+    margin: 20px 0;
+}
+main section .img{
     width: 100%;
     height: 500px;
-    border: 1px solid black;
-}
-main .section-one .img{
+    background-color: #000;
+    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-image: url();
+    background-size: contain;
 }
-main .section-one .img > *{
-    margin: 20px 0;
+main section .img h2{
+    font-size: 25px;
+    font-weight: normal;
 }
-main .section-one > .img h1{
-    font-size: 35px;
-}
-main .section-one .img > button{
-    padding: 15px 30px;
-    background-color: #fff;
-    border: 1px solid black;
-    color: #000;
-}
-footer .footer-tab{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    box-shadow: 0px 0px 2px 0px #000;
-    width: 100%;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 55px;
-}
-main .section-two{
-    padding: 30px 0;
-}
-main .section-two .prod{
-    border: 1px solid black;
-    padding: 10px;
-    margin: 30px 0;
-}
-main .section-two .prod-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center !important;
-}
-main .section-two .prod-flex .prod{
-    margin: 0 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 2px 0px #000;
-}
-main .section-two .prod-flex .prod:hover{
-    box-shadow: 0px 0px 5px 0px #000;
-    transition: box-shadow linear .3s;
-}
-main .section-two .prod .img{
-    display: flex;
-    justify-content: center;
-}
-.d-flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.prc > *{
-    margin: 0 10px;
-}
-main .section-two .p1{
-    text-align: center;
-    font-size: 30px;
-    margin: 20px 0;
-}
-main .section-two .prod .prod-cont{
-    text-align: center;
-    justify-content: center;
-    flex-wrap:wrap;
-}
-main .section-two .prod .prod-cont button{
-    margin: 10px 0;
-    padding: 10px;
+main section .btn-group button{
     border:none;
+    padding: 15px 25px;
+    margin-top: 15px;
 }
-main .section-two .prod .prod-cont .btn-2{
-    padding: 15px 30px;
+main section .prod-cont{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
 }
-main .section-two .prod .prod-cont .btn-1{
-    background-color: #fff;
-    border: 1px solid #000;
-    border-radius: 2px;
+main section .prod-cont{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    text-align: center;
 }
-main .section-two .prod .prod-cont p{
-    margin: 10px 0;
+main section .prod-cont h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-main .section-two .prod img{
+main section .prod-cont .prod img{
     width: 300px;
     height: 300px;
-    margin-bottom: 15px;
 }
-footer .footer-tab div{
-    width: 120px;
-    height: 40px;
+main section .prod-cont .prod .pric{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+main section .prod-cont .prod .pric p{
+    margin: 15px 10px;
+}
+main section .prod-cont .prod{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
     position: relative;
-    font-size: 20px;
 }
-footer .footer-tab #i-last::after{
-    content: "";
-    width: 30px;
-    height: 30px;
-    border-radius: 100px;
-    background-color: #000;
-    position: absolute;
-    z-index: 10;
-    top: -10px;
-    right: 20px;
-    opacity: 0;
-}
-main .section-three{
-    padding: 30px 0;
-}
-main .section-five{
-    position: fixed;
-    left: 0;
+main section .main-icon{
     display: flex;
-    top: 250px;
-    background-color: #fff;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
-main .section-five i{
-    width: 50px;
-    height: 50px;
-    margin: 10px 0;
-    border: 1px solid black;
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+main section .main-icon div img{
+    width: 168px;
+    height: 100px;
 }
-main .section-five i:hover{
-    width: 60px;
-    transition: width ease-in-out .5s;
-}
-main .section-three div{
+main section .main-icon div{
     display: flex;
 }
-main .section-three div img{
-    object-fit: cover;
-}
-main .section-three .div-1,
-main .section-three .div-3{
+main section .main-icon .div-1,
+main section .main-icon .div-3{
     justify-content: right;
 }
-main .section-three .div-2{
+main section .main-icon .div-2{
     justify-content: left;
 }
-main .section-three .div-1 img,
-main .section-three .div-2 img,
-main .section-three .div-3 img{
-    width: 208px;
-    height: 200px;
-    border: 1px solid black;
+footer{
+    background-color: #f5f5f5;
 }
 footer .footer-container{
-    padding: 70px 0;
-    background-color: #f5f5f5;
-}
-footer .footer-container > *{
-    margin: 15px 0;
-}
-footer .footer-container > a{
-    color: black;
-}
-main .section-three .btn-group{
-    margin: 10px 0;
-}
-main .section-three .btn-group a{
-    margin: 5px 0;
-}
-main .section-two .btn-group{
-    display: flex;
-    justify-content: center;
-}
-main .section-two .btn-group button{
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #fff;
-    border: none;
-    margin-top: 10px;
-    width: 200px;
-}
-main .section-two .btn-group button:hover{
-    background-color: #add8ad;
-}
-.main .cart-cont .cart-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 50px;
-}
-.main .cart-cont .cart-header-2{
-    visibility: hidden;
-}
-.main .cart-cont .cart-header-1 p{
-    font-size: 30px;
-}
-.main .cart-cont .cart-body .table-1 tbody{
-    display: flex;
-    justify-content: space-between;
-}
-.main .cart-cont .cart-body .table-1 tbody td{
-    display: flex;
-    justify-content: space-between;
-    text-align: right;
-    padding: 10px;
-}
-.main .cart-cont .cart-body .table-1 tbody td p{
-    font-size: 20px;
-    font-weight: bold;
-    font-size: 17px !important;
-}
-.main .cart-cont .cart-body .table-1 tbody .td-1{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    margin-top: 5px;
-}
-.main .cart-cont .cart-body .table-1 tbody .td-4 label input[type="number"]{
-    width: 100px;
-    border: 1px solid #000;
-    padding: 10px;
-    border:none;
-    background-color: #f5f5f5;
-}
-.main .cart-cont .cart-body .table-1{
-    position: relative;
-    padding: 25px 0;
-}
-.main .cart-cont .cart-body .table-1 tbody .td-1 i{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;right: 0;
-    top: 0;
-    height: 20px;
-    border-radius: 100px;
-    background-color: #000;
-    color: #fff;
-}
-.main .cart-cont .cart-body .table-1 tbody .td-1 img{
-    width: 50px;
-    height: 50px;
-    border: 1px solid;
-}
-.main .cart-cont .cart-body .coup label input{
-    width: 100%;
-    height: 50px;
-    background-color: #f5f5f5;
-    padding-left: 10px;
-    border:0px 0px 2px 0px inset #f5f5f5;
-}
-.main .cart-cont .cart-body .coup .coup-btn-group{
-    display: flex;
-    justify-content: right;
-}
-.main .cart-cont .cart-body .coup .coup-btn-group button{
-    padding: 10px 25px;
-    margin-top: 10px;
-    border: none;
-    color: #000;
-    font-size: 15px;
-}
-.main .cart-cont .cart-body .coup .coup-btn-group .btn-2{
-    margin-top: 30px;
-}
-.main .cart-cont .cart-body .ss{
-    margin-top: 30px;
-}
-.main .cart-cont .cart-body .ss .ss-p1{
-    font-size: 35px;
-    text-decoration: none;
-}
-.main .cart-cont .cart-body .ss .table-2{
-    margin-top: 20px;
-    width: 100%;
-}
-.main .cart-cont .cart-body .ss .table-2 tbody tr td{
-    padding: 20px 0;
-}
-.main .cart-cont .cart-body .ss .table-2 tbody tr td{
-    display: flex;
-    justify-content: space-between;
-    text-align: right;
-}
-.main .cart-cont .cart-body .ss .table-2 tbody tr td p,
-.main .cart-cont .cart-body .ss .table-2 tbody tr td a{
-    padding: 10px;
-    display: block;
-}
-.main .cart-cont .cart-body .ss label{
-    display: block;
-}
-.main .cart-cont .cart-body .ss .label-pro button{
-    width: 100%;
-    height: 70px;
-    font-size: 20px;
-    background-color: #000;
-    color: #fff;
-    margin-bottom: 30px;
-}
-.main .cart-cont .cart-body .ss .lab-a{
-    margin-bottom: 50px;
-    text-decoration: none;
-    display: block;
-    margin-top: 40px !important;
-}
-.main .cart-cont .cart-body .ss .lab,
-.main .ss .lab{
-    display: block;
-}
-.main .cart-cont .cart-body .ss .lab span,
-.main .ss .lab span{
-    display: block;
-}
-.main .cart-cont .cart-body .ss .lab input,
-.main .cart-cont .cart-body .ss .lab button,
-.main .ss .lab input,
-.main .ss .lab button{
-    padding: 10px;
-    border: none;
-}
-.main .cart-cont .cart-body .ss .lab input,
-.main .ss .lab input{
-    box-shadow: 0px 0px 2px 1px inset #000;
-    width: 350px;
-}
-.main .cart-cont .cart-body .ss .rec-p .p-1,
-.main .ss .rec-p .p-1{
-    font-size: 20px;
-    margin-top: 40px;
-    margin-bottom: 15px;
-}
-.main .cart-cont .cart-body .ss .rec-p a,
-.main .ss .rec-p a{
-    color: #000;
-    margin-bottom: 20px;
-    display: block;
-}
-.main .cart-cont .cart-body .ss .rec-p .p-2,
-.main .ss .rec-p .p-2{
-    font-size: 30px;
-    margin-bottom: 15px;
-}
-form > *{
-    display: block;
-}
-form a{
-    margin-top: 30px;
-    margin-bottom: 100px;
-}
-form label{
-    margin-bottom: 10px;
-    position: relative;
-}
-form label input{
-    display: block;
-    position: relative;
-}
-form label input{
-    padding: 10px;
-    width: 100%;
-    margin-top: 5px;
-    background-color: #efd9af;
-    position: relative;
-}
-form .label-2 i{
-    position: absolute;
-    top: 35px;
-    right: 10px;
-}
-.form p{
-    font-size: 30px;
-    margin-top: 20px;
-}
-.form .p-2{
-    margin-bottom: 10px;
-}
-.form .rem input[type="checkbox"]{
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-}
-.form .btn-group button{
-    padding: 10px 30px;
-    background-color: #dddddd;
-    border:none;
-    margin-top: 5px;
-}
-.chaf-right{
-    display: none;
-}
-.chaf-right{
-    display: block;
-    position: absolute;
-    right: 10px;
-    top: 20px;
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }

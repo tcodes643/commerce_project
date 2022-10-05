@@ -4,217 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./stylesheet/App.css" />
+    <link rel="stylesheet" type="text/css" href="./stylesheet/App.css">
+    <link rel="alternate" type="application/atom+xml" href="" />
     <link rel="stylesheet" type="text/css" href="./stylesheet/mobile_res.css" />
+    <link rel="icon" type="image/icon" href="./Assets/logo.jpg" />
+    <link rel="apple-touch-icon" type="image/icon" href="./Assets/logo.jpg" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    <script src=""></script>
+    <title>Chafian - Home</title>
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="header-top">
-                <div class="header-div-1">
-                    <img src="./Assets/logo.jpg" alt="" />
-                </div>
-                <div class="header-div-2">
-                    <button type="button" role="button" aria-label="button" aria-expanded="false" id="mbtn">
-                        <i class="fa fa-bars"></i>
-                        <span>Menu</span>
-                    </button>
-                </div>
-                <div class="header-div-3">
-                    <label for="">
-                        <i class="fa fa-search"></i>
-                        <input type="text" placeholder="Search product"/>
-                    </label>
-                    <div class="header-div-3-relative">
-                        <p class="p1">#575,000 <span>1 item</span><i class="fa fa-"></i></p>
-                        <div class="nav">
-                            <nav class="">
-                                <div class="nav-div">
-                                    <div class="nav-div-1">
-                                        <i class="fa fa-time"></i>
-                                        <span>HP Omen 15-DC1004NIA</span>
-                                    </div>
-                                    <div class="nav-div-2">
-                                        <img src="" alt="" />
-                                    </div>
-                                </div>
-                                <div class="">
-                                    <p>Intel Core 15-8300H, 8GB RAM 1TB SSD, Wins 10 Black (7SB83EA)</p>
-                                    <p>1 x #575,000.00</p>
-                                    <p>Subtotal: #575,000.00</p>
-                                </div>
-                                <div class="btn-group">
-                                    <button type="button">
-                                        <span>View cart <i class="fa fa-"></i></span>
-                                    </button>
-                                    <button type="button" role="button">
-                                        <span>Checkout <i class="fa fa-"></i></span>
-                                    </button>
-                                </div>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
+    <header class="h-flex">
+        <div class="h-i">
+            <div class="logo">    
+                <img src="./Assets/logo.jpg" alt="" />
             </div>
-            <div class="header-nav">
-                <nav class="">
-                    <a href="App.html" hreflang="">Home</a>
-                    <a href="Cart.html" hreflang="">Cart</a>
-                    <a href="" hreflang="">Checkout</a>
-                    <a href="" hreflang="">My Account</a>
-                    <a href="" hreflang="">Sample Page</a>
-                    <a href="" hreflang="">Shop</a>
-                </nav>
-            </div>
-        </header>
-        <div class="main">
             <nav class="">
-                <a href="">
-                    <i class="fa fa-home"></i>
-                    <span>Home</span>
-                    <span>&#62</span>
-                </a>
-                <a href="">
-                    <span>Cart</span>
-                </a>
+                <a href="App.html" hreflang="">Home</a>
+                <a href="Cart.html" hreflang="">Cart</a>
+                <a href="checkout.html" hreflang="">Checkout</a>
+                <a href="acc.html" hreflang="">My account</a>
+                <a href="sample_page.htm" hreflang="">Sample Page</a>
+                <a href="shop.htm" hreflang="">Shop</a>
             </nav>
-            <div class="cart-cont">
-                <div class="cart-header">
-                    <div class="cart-header-1">
-                        <p>Cart</p>
-                    </div>
-                    <div class="cart-header-2">
-                        <label for="">
-                            <div>Search</div>
-                            <input type="search" />
-                            <button type="button" role="button">
-                                <span>Search</span>
-                            </button>
-                        </label>
-                    </div>
-                </div>
-                <div class="cart-body">
-                    <table class="table-1">
-                        <thead>
-
-                        </thead>
-                        <tbody>
-                            <td class="td-1">
-                                <img src="" alt="" />
-                                <div class="">
-                                    <i class="fa fa-times"></i>
-                                </div>
-                            </td>
-                            <td class="td-2">
-                                <p>Product: </p>
-                                <a href="" hreflang="">HP Omen 15-DC1004NIA Intel Core I5-8300H, 8GB RAM 1TB SSD, Wins 10 Black (7SB8#EA)</a>
-                            </td>
-                            <td class="td-3">
-                                <p>Price: </p>
-                                <p>#575,000.00</p>
-                            </td>
-                            <td class="td-4">
-                                <p>Quantity:</p>
-                                <label for="">
-                                    <input type="number" />
-                                </label>
-                            </td>
-                            <td class="td-5">
-                                <p>Subtotal:</p>
-                                <p>#575,000.00</p>
-                            </td>
-                        </tbody>
-                    </table>
-                    <div class="coup">
-                        <label for="">
-                            <input type="" placeholder="Coupon code" />
-                        </label>
-                        <div class="coup-btn-group">
-                            <button type="button" role="button" class="btn-1">
-                                <span>Apply coupon</span>
-                            </button>
-                        </div>
-                        <div class="coup-btn-group">
-                            <button type="button" role="button" class="btn-2" disabled>
-                                <span>Update cart</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="ss">
-                        <p class="ss-p1">Cart totals</p>
-                        <table class="table-2">
-                            <thead></thead>
-                            <tbody>
-                                <tr>
-                                    <td class="td-1">
-                                        <p class="p-1">Subtotal:</p>
-                                        <p class="p-2">#575,000.00</p>
-                                    </td>
-                                    <td class="td-2">
-                                        <div>
-                                            <p class="p-1">Shipping:</p>
-                                        </div>
-                                        <div class="">
-                                            <p class="p-2">Free shipping</p>
-                                            <p class="p-3">Shipping to Abuja</p>
-                                            <a href="" hreflang="">Change address</a>
-                                        </div>
-                                    </td>
-                                    <td class="td-3">
-                                        <p class="p-1">Total:</p>
-                                        <p class="p-2">#575,000.00</p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <label for="label-pro" class="label-pro">
-                            <button type="button" role="button" aria-label="" aria-expanded="false">
-                                <span>Proceed to checkout</span>
-                                <i class="fa fa-arrow-right"></i>
-                            </button>
-                        </label>
-                        <a href="" hreflang="" class="lab-a">Edit</a>
-                        <label class="lab">
-                            <span>Search</span>
-                            <input type="Search" placeholder="" class="inp"/>
-                            <button type="button" aria-label="" aria-expanded="false">
-                                <span>Search</span>
-                            </button>
-                        </label>
-                        <div class="rec-p">
-                            <p class="p-1">Recent Posts</p>
-                            <a href="" hreflang="">Hello world!</a>
-                            <p class="p-2">Recent Comments</p>
-                            <a href="" hreflang="">A WordPress Commenter on Hello world!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>    
-    <footer>
-        <div class="footer-tab">
-            <div class="user">
-                <i class="fa fa-user"></i>
-            </div>
-            <div class="search">
+        <div class="h-ii">
+            <button type="button" role="button">
+                <i class="fa fa-bars"></i>
+                <span>Menu</span>
+            </button>
+        </div>
+        <div class="h-iii">
+            <label for="">
                 <i class="fa fa-search"></i>
-            </div>
-            <div class="fa fa-" id="i-last">
+                <input type="search" placeholder="Search product"/>
+            </label>
+            <div class="h-iii-div">
+                <p>#0.00 <span>0 item</span></p>
                 <i class="fa fa-"></i>
-                <span></span>
             </div>
         </div>
+    </header>
+    <div class="c__">
+        <nav class="">
+            <i class="fa fa-home"></i>
+            <a href="" hreflang="">Home</a>
+            <i class="fa fa-angle-right"></i>
+            <a href="" hreflang="">Cart</a>
+        </nav>
+        <div class="">
+            <p>Cart</p>
+            <button type="button" role="button">
+                <i class="fa fa-"></i>
+                <span>Your cart is currently empty.</span>
+            </button>
+        </div>
+        <div class="">
+            <button type="button" role="button">
+                <span class="">Return to shop</span>
+            </button>
+        </div>
+        <div class="">
+            <span>Search</span>
+            <label for="">
+                <input type="search" placeholder=""/>
+            </label>
+            <button type="button" role="button" aria-label="" aria-expanded="false">
+                <span>Search</span>
+            </button>
+        </div>
+        <div class="">
+            <div class="">
+                <p>Recent Posts</p>
+                <a href="" hreflang="">Hello world!</a>
+            </div>
+            <div class="">
+                <p>Recent Comments</p>
+                <a href="" hreflang="">A WordPress Commenter on Hello world!</a>
+            </div>
+        </div>
+    </div>
+    <footer>
         <div class="footer-container">
-            <p>&#169;</p>
             <p>Chafian Klassy Online Store 2022</p>
-            <a href="" hreflang="">Built with Storefront & WooCommerce.</a>
+            <a href="" hreflang="">Built with Storefront & WooCommerce</a>
         </div>
     </footer>
-    <script src="./script/App.js"></script>
     <script src="./script/refresh.js"></script>
+    <script src="./script/App.js"></script>
 </body>
 </html>

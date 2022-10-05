@@ -1,118 +1,45 @@
-@media screen and (min-width: 768px){
-    main .section-five{
-        display: none !important;
-    }
-    footer .footer-tab{
-        visibility: hidden;
-    }
-    .container{
-        width: 85%;
-        margin: 0 auto;
-    }
-    main .section-two .prod-flex{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: left !important;
-    }
-    header .header-nav{
-        height: 65px;
-    }
-    header .header-nav nav{
-        display: flex;
-        margin-top: 20px;
-        flex-wrap: wrap;
-    }
-    header .header-nav nav a{
-        padding: 10px 20px;
-    }
-    header .header-top .header-div-2{
+@media screen and (min-width: 600px){
+    header .h-ii{
         display: none;
     }
-    header .header-top .header-div-3:focus{
-        outline: none;
+    header .h-iii{
+        display: block;
     }
-    header .header-top .header-div-3{
-        position: absolute;
-        top: 25px;
-        right: 30px;
+    header .h-iii .h-iii-div{
+        margin-top: 65px;
+        margin-bottom: 0;
     }
-    header .header-top .header-div-3 .header-div-3-relative{
-        position: relative;
-    }
-    header{
-        border-bottom: 1px solid rgb(194, 194, 194);
-    }
-    header .header-top .header-div-3 .header-div-3-relative .nav{
-        position: absolute;
-        top: 44px;
-        font-size: 15px;
-        width: 150px;
-        background-color: #f5f5f5;
-    }
-    header .header-top .header-div-3 .header-div-3-relative .nav .btn-group{
+    header .h-i nav{
         display: flex;
-        flex-direction: column;
-        margin-top: 20px;
+        margin-top: 30px;
     }
-    
-    header .header-top .header-div-3 .header-div-3-relative .nav .btn-group button{
-        border:none;
+    header .h-iii label{
+        display: flex;
+        align-items: center;
+    }
+    header .h-iii label input{
         padding: 10px;
-        margin-top: 10px;
     }
-    header .header-top .header-div-3 label{
-        height: 35px;
-        display: flex;
-        align-items: center;
-        border: 1px solid;
-        margin-bottom: 55px;
-    }
-    header .header-top .header-div-3 label i{
-        margin: 0 15px;
-        margin-right: 0;
-    }
-    header .header-top .header-div-3 label input{
-        background-color: transparent;
-        height: 35px;
-        border:none;
-        margin-left: 8px;
-    }
-    header .header-nav nav a:first-child{
-        padding-left: 0;
-    }
-    header .header-top .header-div-3 .header-div-3-relative{
-        cursor: pointer;   
-    }
-    header .header-top .header-div-3 .header-div-3-relative .nav .nav-div{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    header .header-top .header-div-3 .header-div-3-relative .nav .nav-div .nav-div-2 img{
-        width: 100%;
-        height: 100%;
-        background-image: contain;
-        width: 25px;
-        height: 25px;
-        border: 1px solid;
+    header .h-iii label i{
+        margin-right: 10px;
     }
 }
-@media screen and (max-width: 768px){
-    header .header-top .header-div-3{
-        display: none;
-    }
-    main .section-two .prod-flex{
+@media screen and (min-width: 600px){
+    main section .prod-flex{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center !important;
+        flex-wrap:wrap;
+        justify-content: center;
+        width: 600px;
     }
-    footer .footer-tab{
-        visibility: hidden;
-    }   
-    .chaf-right{
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 20px;
+    main section .prod-cont .prod img{
+        width: 200px;
+        height: 200px;
+        margin: 0 25px;
+        transition: all linear .3s;
+    }
+}
+@media screen and (min-width: 768px){
+    main section .prod-flex{
+        width: 100%;
     }
 }
